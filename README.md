@@ -170,6 +170,4 @@ Invalid email → 400 Verify cooldown timer, prevent abuse
 TC ID	Endpoint	Method	Request Body / Params	Expected Response	Negative Scenarios	Notes
 API-SEC-01	Any endpoint	Any	SQL injection payloads (' OR 1=1;--)	400 Bad Request / 422	- API executes or leaks SQL → 500	Validate input sanitization
 API-SEC-02	Any endpoint	Any	Cross-site script in payload (<script>)	400 Bad Request / Escaped HTML	- HTML reflected unescaped → security flaw	Ensure HTML escaping on all string fields
-API-SEC-03	Any endpoint	Any	Invalid JWT / expired JWT	401 Unauthorized	- Missing JWT still allows access → Critical	Token validation must be enforced globally
-API-SEC-04	Any endpoint	Any	Ma…Read more
-11:23 am
+
