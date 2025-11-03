@@ -1,0 +1,12 @@
+**Install dependencies:**
+    ```bash
+    npm install @playwright/test
+    ```
+2.  **Run tests:**
+    ```bash
+    npx playwright test
+    ```
+3.  **Generate Report:**
+    ```bash
+    npx playwright show-report
+    ```
